@@ -404,4 +404,16 @@ template {
 .header__icon:hover {
   fill: #6188FF; }
 
+.customers-wrapper {
+  min-height: 145px;
+  max-width: 945px; }
+
+.customers__company-item {
+  width: 116px;
+  height: 29px;
+  fill: #B6BAC7; }
+
+.customers__company-item:hover {
+  fill: #3A79FF; }
+
 /*# sourceMappingURL=style.min.css.map */
