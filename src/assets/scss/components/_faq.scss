@@ -38,7 +38,7 @@
         &::before {
             @include pseudo ();
             @include background ();
-            background-image: url(/dist/assets/images/faq/Vector.svg);
+            background-image: url(../../images/faq/Vector.svg);
             transform: rotate(180deg);
             left: -31px;
             bottom: 10px;
