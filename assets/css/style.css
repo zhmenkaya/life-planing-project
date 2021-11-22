@@ -456,3 +456,134 @@ template {
 .header__icon:hover {
     fill: #6188FF;
 }
+
+.customers-wrapper {
+    min-height: 145px;
+    max-width: 945px;
+}
+
+.customers__company-item {
+    width: 116px;
+    height: 29px;
+    fill: #B6BAC7;
+}
+
+.customers__company-item:hover {
+    fill: #3A79FF;
+}
+
+.features {
+    padding-top: 185px;
+    padding-bottom: 185px;
+    background-image: url(/assets/images/features/clouds.svg);
+}
+
+.features__subtitle {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #3D4F9F;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+.features__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #3D4F9F;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 92px;
+}
+
+.features__content {
+    margin-bottom: 92px;
+}
+
+.features__col {
+    margin-left: 18px;
+}
+
+.features__icon-box {
+    border-radius: 50%;
+    background: #F1F5FF;
+    width: 69px;
+    height: 69px;
+    margin: 0 auto;
+}
+
+.features__description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #4074F8;
+    margin-top: 33px;
+    margin-bottom: 25px;
+}
+
+.features__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #ADB3CB;
+    max-width: 145px;
+}
+
+.features__btn-group {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #ADB3CB;
+}
+
+.features__btn {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    border-radius: 2px;
+    border: none;
+    width: 113px;
+    height: 43px;
+    text-align: center;
+}
+
+.features__btn--red {
+    background-color: #FFD7D7;
+    color: #D43F3F;
+}
+
+.features__btn--blue {
+    background-color: #D2E1FF;
+    color: #3A79FF;
+}
+
+.features__choice {
+    margin: 0 47px;
+    position: relative;
+}
+
+.features__choice::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    left: 30px;
+    top: 9px;
+    border: 1px solid #DAE4FE;
+}
+
+.features__choice::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    right: 30px;
+    top: 9px;
+    border: 1px solid #DAE4FE;
+}
