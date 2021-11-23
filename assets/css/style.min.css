@@ -784,4 +784,19 @@ template {
     color: #FFFFFF;
     font-family: 'Quicksand', sans-serif; }
 
+.footer {
+  padding-top: 80px;
+  padding-bottom: 93px; }
+  .footer__container {
+    max-width: 1255px !important; }
+  .footer__row {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #AEB8D0;
+    font-family: 'Quicksand';
+    letter-spacing: 0.05em;
+    margin-top: 28px;
+    margin-left: 115px; }
+
 /*# sourceMappingURL=style.min.css.map */
