@@ -38,15 +38,14 @@
         &::before {
             @include pseudo ();
             @include background ();
-            background-image: url(../../images/faq/Vector.svg);
-            transform: rotate(180deg);
+            background-image: url(/assets/images/faq/Vector.svg);
             left: -31px;
             bottom: 10px;
             width: 40px;
             height: 11px;
         }
         &.collapsed::before {
-            transform: rotate(0);
+            transform: rotate(180deg);
         }
     }
     &__card-body {
