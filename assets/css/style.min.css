@@ -605,6 +605,82 @@ template {
   .stats__text--right {
     color: #5E80FF; }
 
+.quotes {
+  padding-top: 109px;
+  padding-bottom: 138px;
+  background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%); }
+  .quotes__subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #3D4F9F;
+    letter-spacing: 0.1em;
+    margin-bottom: 31px; }
+  .quotes__title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 45px;
+    color: #3D4F9F;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 14px; }
+  .quotes__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #A4ABC8;
+    letter-spacing: 0.03em;
+    max-width: 323px; }
+  .quotes__indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #D1D6E3;
+    margin-right: 8px;
+    margin-left: 8px; }
+  .quotes__indicators {
+    position: absolute;
+    bottom: -46px;
+    left: 20px; }
+  .quotes__carousel-inner {
+    height: 245px; }
+  .quotes__wrapper {
+    padding: 35px 55px 42px 67px;
+    background: #FFFFFF;
+    border: 1px solid #D8E3FE;
+    position: relative; }
+  .quotes__review {
+    max-width: 283px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #676F95;
+    letter-spacing: 0.03em; }
+  .quotes__img {
+    width: 62px;
+    height: 62px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+    position: absolute;
+    bottom: -33px;
+    left: 45%;
+    z-index: 1; }
+
+.carousel-indicators {
+  bottom: -68px !important; }
+
+.carousel-indicators li {
+  width: 8px !important;
+  height: 8px !important;
+  border: 50% !important;
+  margin-left: 12px !important;
+  background-color: #D1D6E3 !important; }
+
+.carousel-indicators .active {
+  background-color: #5283FF !important; }
+
 .faq {
   padding-top: 176px;
   padding-bottom: 155px; }
@@ -648,14 +724,13 @@ template {
     display: block;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../../images/faq/Vector.svg);
-    transform: rotate(180deg);
+    background-image: url(/assets/images/faq/Vector.svg);
     left: -31px;
     bottom: 10px;
     width: 40px;
     height: 11px; }
   .faq__btn.collapsed::before {
-    transform: rotate(0); }
+    transform: rotate(180deg); }
   .faq__card-body {
     padding: 0px 0 50px 50px; }
   .faq__btn-body {
