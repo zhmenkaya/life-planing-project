@@ -736,7 +736,7 @@ template {
 }
 
 .blog {
-    background: darkblue;
+    background: #F5F8FF;
     padding: 105px;
     padding-bottom: 203px;
 }
@@ -767,88 +767,38 @@ template {
 }
 
 .blog__wrapper {
-    padding: 63px 41px 64px 35px;
-    max-width: 958px;
-    width: 100%;
-    background-color: white;
-    border: 1px solid #D8E3FE;
-    margin: 0 auto;
     display: -ms-flexbox;
     display: flex;
-    -webkit-column-gap: 50px;
-    -moz-column-gap: 50px;
-    column-gap: 50px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    max-width: 968px;
+    margin: 0 auto;
+    border: 1px solid red;
 }
 
-@media screen and (max-width: 1220px) {
-    .blog__wrapper {
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
+.blog__box-images {
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    overflow: hidden;
 }
 
-.blog__slider {
-    height: 394px;
+.blog__left-img {
+    width: 70%;
 }
 
-.blog__row-icon {
-    background-image: url(./../images/blog/left.svg);
-    width: 27px;
-    height: 19px;
+.blog__right-images {
+    width: 30%;
 }
 
-.blog__row-icon--right {
-    background-image: url(./../images/blog/right.svg);
-    width: 27px;
-    height: 19px;
+.blog__box-content {
+    width: 50%;
+    overflow: hidden;
 }
 
-.blog__row {
-    left: -95px;
-}
-
-.blog__row--right {
-    right: -95px;
-}
-
-.blog__grid {
-    display: grid;
-    grid-template-columns: 270px 127px;
-    grid-template-rows: 127px 127px;
-    gap: 11px;
-    row-gap: 13px;
-}
-
-.blog__box {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 13px;
-}
-
-.blog-img {
+.blog__img {
     -o-object-fit: cover;
     object-fit: cover;
-    border-radius: 5px;
-}
-
-.blog-img--big {
-    width: 267px;
-    height: 267px;
-}
-
-.blog-img--sm {
-    width: 127px;
-    height: 126px;
-}
-
-.blog__content {
-    max-width: 408px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%;
 }
 
 .blog__heading {
@@ -890,17 +840,20 @@ template {
     width: 211px;
 }
 
-.blog__carousel {
-    bottom: -122px;
+.carousel-control-next-icon {
+    background-image: url(/assets/images/blog/right-arrow.svg) !important;
 }
 
-.blog__carousel li {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #D1D6E3;
-    margin-right: 5px;
-    margin-left: 5px;
+.carousel-control-next {
+    right: -45px !important;
+}
+
+.carousel-control-prev {
+    left: -53px !important;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(/assets/images/blog/left-arrow.svg) !important;
 }
 
 .quotes {

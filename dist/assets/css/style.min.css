@@ -627,55 +627,71 @@ template {
     font-family: 'Roboto', sans-serif;
     margin-bottom: 20px; }
   .blog__wrapper {
-    padding: 63px 41px 64px 35px;
-    max-width: 958px;
-    width: 100%;
-    background-color: white;
+    background: #FFFFFF;
     border: 1px solid #D8E3FE;
-    margin: 0 auto;
+    box-shadow: 0px 15px 50px #EFF4FF;
+    padding: 63px 0 64px 35px;
+    background: #fff;
     display: flex;
-    column-gap: 50px;
-    flex-wrap: wrap; }
-    @media screen and (max-width: 1220px) {
-      .blog__wrapper {
-        justify-content: center; } }
-  .blog__slider {
+    max-width: 958px;
+    margin: 0 auto;
     height: 394px; }
-  .blog__row-icon {
-    background-image: url(/assets/images/blog/left-arrow.svg);
-    width: 27px;
-    height: 19px; }
-    .blog__row-icon--right {
-      background-image: url(/assets/images/blog/right-arrow.svg);
-      width: 27px;
-      height: 19px; }
-  .blog__row {
-    left: -95px; }
-    .blog__row--right {
-      right: -95px; }
-  .blog__grid {
-    display: grid;
-    grid-template-columns: 270px 127px;
-    grid-template-rows: 127px 127px;
-    gap: 11px;
-    row-gap: 13px; }
-  .blog__box {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    gap: 13px; }
-  .blog-img {
-    object-fit: cover;
-    border-radius: 5px; }
-  .blog-img--big {
+  .blog__box-images {
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    column-gap: 13px;
+    margin-right: 67px; }
+  .blog__left-img {
+    background: linear-gradient(13.46deg, rgba(255, 199, 53, 0.44) 1.89%, rgba(255, 227, 154, 0.93) 1.9%, rgba(255, 159, 90, 0) 68.24%), url(/assets/images/blog/blog-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    filter: drop-shadow(0px 15px 100px #E5EBF8);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     width: 267px;
     height: 267px; }
-  .blog-img--sm {
-    width: 127px;
-    height: 126px; }
-  .blog__content {
-    max-width: 408px;
+  .blog__right-images {
+    width: 30%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    row-gap: 14px; }
+  .blog__right-up {
+    width: 127px;
+    height: 127px;
+    background: linear-gradient(27.48deg, rgba(255, 53, 53, 0.48) 14.02%, rgba(255, 179, 90, 0) 68%), url(/assets/images/blog/blog-up.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    filter: drop-shadow(0px 15px 100px #E5EBF8);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px; }
+  .blog__right-down {
+    width: 127px;
+    height: 127px;
+    background: linear-gradient(13.49deg, rgba(53, 170, 255, 0.68) 11.59%, rgba(90, 136, 255, 0) 96.88%), url(/assets/images/blog/blog-down.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    filter: drop-shadow(0px 15px 100px #E5EBF8);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px; }
+  .blog__box-content {
+    width: 50%;
+    overflow: hidden; }
+  .blog__img {
+    width: 100%;
+    object-fit: fill; }
   .blog__heading {
     font-size: 36px;
     font-weight: 400;
@@ -705,15 +721,26 @@ template {
       border: none; }
     .blog-btn--white {
       width: 211px; }
-  .blog__carousel {
-    bottom: -122px; }
-  .blog__carousel li {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #D1D6E3;
-    margin-right: 5px;
-    margin-left: 5px; }
+
+.carousel-control-next-icon {
+  background-image: url(/assets/images/blog/right-arrow.svg) !important; }
+
+.carousel-control-next {
+  right: -45px !important; }
+
+.carousel-control-prev {
+  left: -53px !important; }
+
+.carousel-control-prev-icon {
+  background-image: url(/assets/images/blog/left-arrow.svg) !important; }
+
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #D1D6E3;
+  margin-right: 5px;
+  margin-left: 5px; }
 
 .quotes {
   padding-top: 109px;
