@@ -453,7 +453,7 @@ template {
   .diagram__main {
     position: absolute;
     left: 0;
-    bottom: 0; }
+    bottom: -220px; }
   .diagram__point1, .diagram__point2, .diagram__point3, .diagram__point4 {
     cursor: pointer; }
   .diagram__baloon1, .diagram__baloon2, .diagram__baloon3, .diagram__baloon4 {
@@ -464,6 +464,9 @@ template {
   .diagram__point4:hover + .diagram__baloon4 {
     opacity: 1;
     transition: 700ms; }
+
+.carousel-indicators ol {
+  bottom: 9px !important; }
 
 .customers-wrapper {
   min-height: 145px;

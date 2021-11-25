@@ -10,6 +10,7 @@
         margin-right: 5px;
         margin-left: 5px;
     }
+    
     &__item {
         padding-top: 65px;
         height: 540px;
@@ -46,7 +47,7 @@
     &__main {
         position: absolute;
         left: 0;
-        bottom: 0;
+        bottom: -220px;
     }
     &__point1,
     &__point2,
@@ -67,4 +68,8 @@
         opacity: 1;
         transition: 700ms;
     }
+}
+
+.carousel-indicators ol{
+    bottom: 9px !important;
 }
