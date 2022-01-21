@@ -1054,6 +1054,12 @@ template {
     transform: rotate(180deg); }
   .faq__card-body {
     padding: 0px 0 50px 50px; }
+    @media screen and (max-width: 576px) {
+      .faq__card-body {
+        padding: 0px 0 50px 15px; } }
+    @media screen and (max-width: 360px) {
+      .faq__card-body {
+        flex-direction: column !important; } }
   .faq__btn-body {
     background-color: #E8ECF4;
     font-size: 13px;
@@ -1063,6 +1069,15 @@ template {
     font-family: 'Quicksand', sans-serif;
     width: 195px;
     height: 43px; }
+    @media screen and (max-width: 576px) {
+      .faq__btn-body {
+        min-width: 132px;
+        height: 60px; } }
+    @media screen and (max-width: 360px) {
+      .faq__btn-body {
+        width: 195px;
+        height: 43px;
+        margin-top: 1.5rem !important; } }
   .faq__text {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -1072,6 +1087,13 @@ template {
     max-width: 391px;
     letter-spacing: 0.03em;
     margin-right: 62px; }
+    @media screen and (max-width: 992px) {
+      .faq__text {
+        margin-right: 30px; } }
+    @media screen and (max-width: 576px) {
+      .faq__text {
+        max-width: 325px;
+        margin-right: 10px; } }
 
 .started {
   padding-top: 92px;
@@ -1082,6 +1104,12 @@ template {
     height: 319px;
     width: 1297px;
     margin: 0 auto; }
+    @media screen and (max-width: 575px) {
+      .started .container {
+        max-width: 410px; } }
+    @media screen and (max-width: 360px) {
+      .started .container {
+        max-width: 300px; } }
   .started__subtitle {
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
@@ -1098,12 +1126,24 @@ template {
     color: #FFFFFF;
     font-family: 'Quicksand', sans-serif;
     margin-bottom: 28px; }
+    @media screen and (max-width: 576px) {
+      .started__title {
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 60px;
+        color: #FFFFFF; } }
   .started__span {
     font-size: 48px;
     font-weight: 500;
     line-height: 60px;
     color: #FFFFFF;
     font-family: 'Quicksand', sans-serif; }
+    @media screen and (max-width: 576px) {
+      .started__span {
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 60px;
+        color: #FFFFFF; } }
   .started__text {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
@@ -1114,6 +1154,9 @@ template {
     max-width: 712px;
     text-align: center;
     margin-bottom: 28px; }
+    @media screen and (max-width: 576px) {
+      .started__text {
+        max-width: 300px; } }
   .started__btn {
     height: 43px;
     border-radius: 2px;
@@ -1127,6 +1170,9 @@ template {
       line-height: 16px;
       color: #565F82;
       font-family: 'Quicksand', sans-serif; }
+      @media screen and (max-width: 576px) {
+        .started__btn--white {
+          margin-bottom: 15px; } }
     .started__btn--blue {
       width: 175px;
       border: 1px solid #A0B4FF;
@@ -1136,10 +1182,21 @@ template {
       color: #C7D3FF;
       font-family: 'Quicksand', sans-serif; }
 
+@media screen and (max-width: 576px) {
+  .started__btn-group {
+    align-items: center !important; } }
+
 .newsletter {
   padding-top: 120px;
   padding-bottom: 119px;
   border-bottom: 1px solid #D8E3FE; }
+  @media screen and (max-width: 575px) {
+    .newsletter .container {
+      max-width: 375px !important;
+      margin: 0 auto; } }
+  @media screen and (max-width: 360px) {
+    .newsletter .container {
+      max-width: 300px !important; } }
   .newsletter__title {
     font-size: 18px;
     font-weight: 700;
@@ -1157,6 +1214,9 @@ template {
     width: 330px; }
   .newsletter__content {
     margin-right: 80px; }
+    @media screen and (max-width: 575px) {
+      .newsletter__content {
+        margin-right: 0; } }
   .newsletter__mail {
     width: 279px !important;
     height: 59px;
