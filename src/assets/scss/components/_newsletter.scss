@@ -2,6 +2,16 @@
     padding-top: 120px;
     padding-bottom: 119px;
     border-bottom: 1px solid #D8E3FE;
+    .container{
+        @media screen and (max-width: 575px) {
+            max-width: 375px !important;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 360px) {
+            max-width: 300px !important;
+        }
+    }
+    
     &__title {
         @include text (18px, 700, 22px, #3D4F9F);
         font-family: 'Quicksand', sans-serif;
@@ -15,6 +25,9 @@
     }
     &__content {
         margin-right: 80px;
+        @media screen and (max-width: 575px) {
+            margin-right: 0;
+        }
     }
     &__mail {
         width: 279px !important;
