@@ -41,3 +41,9 @@
         fill: #6188FF;
     }
 }
+
+.menu nav{
+    @media screen and (max-width: 992px) {
+        justify-content: center !important;
+    }
+}
